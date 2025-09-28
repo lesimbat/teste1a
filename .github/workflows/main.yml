@@ -1,17 +1,13 @@
 name: Python CI
-​
-on:
+​on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-​
-jobs:
+​jobs:
   build:
-​
-    runs-on: ubuntu-latest
-​
-    steps:
+​    runs-on: ubuntu-latest
+​    steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
